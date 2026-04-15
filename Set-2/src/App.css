@@ -1,0 +1,67 @@
+/* Question-3 */
+/* Container */
+.user-container {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Title */
+.title {
+  margin-bottom: 20px;
+}
+
+/* Grid layout */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* Card */
+.user-card {
+  padding: 15px;
+  border-radius: 10px;
+  background: #f5f5f5;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.user-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Text */
+.user-name {
+  margin-bottom: 10px;
+}
+
+.user-email,
+.user-city {
+  margin: 5px 0;
+}
+
+/* States */
+.loading {
+  color: blue;
+}
+
+.error {
+  color: red;
+}
+
+.search-input {
+  margin-bottom: 20px;
+  padding: 10px 14px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition:
+    border 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.search-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
