@@ -65,3 +65,72 @@
   border-color: #007bff;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
 }
+
+
+/* question-4 */
+/* Container */
+.stopwatch-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #0f172a;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Time display */
+.time-display {
+  font-size: 60px;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+/* Button group */
+.btn-group {
+  display: flex;
+  gap: 15px;
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.1s ease, opacity 0.2s ease;
+}
+
+/* Button hover */
+.btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Variants */
+.start {
+  background-color: #22c55e;
+  color: white;
+}
+
+.stop {
+  background-color: #ef4444;
+  color: white;
+}
+
+.reset {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group input {
+  padding: 5px;
+  width: 80px;
+  margin-left: 10px;
+}
