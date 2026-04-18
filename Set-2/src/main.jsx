@@ -4,11 +4,14 @@ import "./index.css";
 import App from "./App.jsx";
 import ThemeApp from "./ThemeApp.jsx";
 import { ThemeProvider } from "./context/ThemeProvider.jsx";
+import AuthProvider from "./context/AuthProvider.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <ThemeProvider>
-      <App />
+      <AuthProvider>
+        <App />
+      </AuthProvider>
     </ThemeProvider>
 
     {/* Question-1  */}

@@ -5,9 +5,10 @@ import './App.css';
 import ReactStopwatch from './pages/ReactStopwatch';
 import Home from './pages/Home';
 import { ThemeContext } from './context/ThemeProvider';
+import AuthPage from './pages/AuthPage';
 
 const App = () => {
-  const {theme, toggleTheme} = useContext(ThemeContext);
+  // const {theme, toggleTheme} = useContext(ThemeContext);
   // console.log(theme);
   
   return (
@@ -23,10 +24,13 @@ const App = () => {
 
       {/* ** Context API in React ** */}
       {/* Question - 11 */}
-        <div>
+      {/* <div>
           <button onClick={toggleTheme}> Switch to {theme === 'light' ? 'Dark' : 'Light'} </button>
           <Home />
-        </div>
+        </div> */}
+
+      {/* Question - 12 */}
+        <AuthPage />
     </>
   );
 }
